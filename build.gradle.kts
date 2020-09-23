@@ -54,6 +54,7 @@ compileTestKotlin.kotlinOptions {
 
 tasks.register("runOnGitHub") { // 1
     dependsOn("test")  // 2 ==> CUSTOMIZE THIS LINE
-    group = "me.myuser"      // 3
+    group = "Git_Actions"      // 3
     description = "$ ./gradlew runOnGitHub # runs on GitHub Action" //3
 }
+
