@@ -1,7 +1,7 @@
 package headFirstKotlin.chapter1
 
 fun run_Version_1() {
-    println("Pow")
+    println(Pow)
     var x = 3
     val name = "Cormoran"
     x *= 10
@@ -49,6 +49,6 @@ fun run_Version2() {
 }
 
 fun main() {
-    //run_Version_1() Test WorkFlows
+    // run_Version_1() Test WorkFlows
     run_Version2()
 }
