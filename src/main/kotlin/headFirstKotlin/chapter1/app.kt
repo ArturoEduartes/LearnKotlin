@@ -39,6 +39,7 @@ fun run_Version_1() {
 }
 
 fun run_Version2() {
+    var notUsed = "Not user"
     var x = 1
     println("Before the loop. x = $x.")
     while (x < 4) {
@@ -49,6 +50,6 @@ fun run_Version2() {
 }
 
 fun main() {
-    // run_Version_1() Test WorkFlows
+    run_Version_1() //Test WorkFlows
     run_Version2()
 }
