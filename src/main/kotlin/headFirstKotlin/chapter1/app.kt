@@ -1,8 +1,7 @@
 package headFirstKotlin.chapter1
 
 fun run_Version_1() {
-
-    println(Pow)
+    println("Pow")
     var x = 3
     val name = "Cormoran"
     x *= 10
