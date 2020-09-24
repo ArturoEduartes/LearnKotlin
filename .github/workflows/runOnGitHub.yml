@@ -37,7 +37,7 @@ jobs:
       - uses: eskatos/gradle-command-action@v1
         with:
           gradle-version: 6.5
-          arguments: runOnGitHub --info
+          arguments: upper --info
           wrapper-cache-enabled: true
           dependencies-cache-enabled: true
           configuration-cache-enabled: true

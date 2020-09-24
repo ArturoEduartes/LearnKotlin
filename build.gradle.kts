@@ -57,4 +57,11 @@ tasks.register("runOnGitHub") { // 1
     group = "Git_Actions"      // 3
     description = "$ ./gradlew runOnGitHub # runs on GitHub Action" //3
 }
-
+tasks.register("upper") {
+    group = "Git_Actions"
+    doLast {
+        val someString = "mY_nAmE"
+        println("Original: $someString")
+        println("Upper case: ${someString.toUpperCase()}")
+    }
+}
