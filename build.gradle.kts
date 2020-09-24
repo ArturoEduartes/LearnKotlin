@@ -1,11 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 /*
 sourceSets {
     main {
-        java {
-            setSrcDirs(listOf("src"))
-        }
+        java.srcDir(file("src/main/kotlin"))
+
     }
+}
 
     test {
         java {
@@ -18,13 +19,15 @@ sourceSets {
 
 plugins {
     kotlin("jvm") version "1.4.10"
-    application
+    id("org.jetbrains.dokka") version "1.4.10"
+    //application
 }
 group = "me.myuser"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -57,8 +60,10 @@ tasks.register("runOnGitHub") { // 1
     group = "Git_Actions"      // 3
     description = "$ ./gradlew runOnGitHub # runs on GitHub Action" //3
 }
+
 tasks.register("upper") {
     group = "Git_Actions"
+    description = "$ ./gradlew runOnGitHub # runs on GitHub Action"
     doLast {
         val someString = "mY_nAmE"
         println("Original: $someString")
