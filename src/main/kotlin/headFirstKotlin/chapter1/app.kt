@@ -23,19 +23,18 @@ fun run_Version_1() {
     if (name == "Cormoran") {
         println("$name Strike")
     }
-    x = 4 //Assign 4 to x
+    x = 4 // Assign 4 to x
     while (x > 3) {
-        //The loop code will run as x is greater than 4
+        // The loop code will run as x is greater than 4
         println(x)
         x -= 1
     }
     var z = 27
     while (z == 10) {
-        //The loop code will not run as z is 27
+        // The loop code will not run as z is 27
         println(z)
         z += 6
     }
-
 }
 
 fun run_Version2() {
@@ -50,6 +49,6 @@ fun run_Version2() {
 }
 
 fun main() {
-    run_Version_1() //Test WorkFlows
+    run_Version_1() // Test WorkFlows
     run_Version2()
 }

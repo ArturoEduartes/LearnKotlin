@@ -1,6 +1,6 @@
 package headFirstKotlin.chapter1
 
-fun main() {  //TODO "agregar comentarios"
+fun main() { // TODO "agregar comentarios"
     val name = "Misty"
     val height = 9
 
