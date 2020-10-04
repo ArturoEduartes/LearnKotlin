@@ -1,6 +1,6 @@
 package headFirstKotlin.chapter1
 
-fun run_Version_1() {
+fun runVersion1() {
     println("Pow")
     var x = 3
     val name = "Cormoran"
@@ -37,7 +37,7 @@ fun run_Version_1() {
     }
 }
 
-fun run_Version2() {
+fun runVersion2() {
     var notUsed = "Not user"
     var x = 1
     println("Before the loop. x = $x.")
@@ -49,6 +49,6 @@ fun run_Version2() {
 }
 
 fun main() {
-    run_Version_1() // Test WorkFlows
-    run_Version2()
+    runVersion1() // Test WorkFlows
+    runVersion2()
 }
